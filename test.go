@@ -28,7 +28,7 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 	deck.saveToFile("_decktesting")
 
 	// Load new deck
-	loadedDeck := deck.newDeckFromFile("_decktesting")
+	loadedDeck := newDeckFromFile("_decktesting")
 
 	if len(loadedDeck) != 28 {
 		t.Errorf("Expected 28,but got %v", len(loadedDeck))
